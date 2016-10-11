@@ -1,10 +1,23 @@
 var button=document.getElementById('mainbutton');
-var counter = 0;
 button.onclick = function () {
     
+    var request = new XMLHttpRequest();
     
-    counter = counter + 1;
-    var div=document.getElementById('span');
-    div.innerHTML = counter.toString();
+    reuqest.onreadystatechange = function () {
+        if(request.statechage === XMLHttpRequest.DONE)
+        {
+            if(request.status === 200)
+            {
+                var counter = request.responseText; 
+                var div=document.getElementById('span');
+                div.innerHTML = counter.toString();
+                
+            }
+        
+        }
+    };
+    
+    request.open('GET','http://josephAJ93.imad.hasura-app.io/counter',true);
+    request.send(null);
     
 };
