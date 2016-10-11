@@ -19,8 +19,5 @@ button.onclick = function () {
     
     request.open('GET','http://josephAJ93.imad.hasura-app.io/counter',true);
     request.send(null);
-    //var counter = request.responseText; 
-    //var div=document.getElementById('span');
-    //div.innerHTML = counter.toString();
-    
+   
 };
