@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 var counter;
 app.get('/counter', function(req, res){
     counter= counter +1;
-    res.send(counter.ToString());
+    res.send(counter.toString());
 })
 
 
