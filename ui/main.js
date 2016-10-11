@@ -1,4 +1,4 @@
-var button=document.getElementById('mainbutton');
+/*var button=document.getElementById('mainbutton');
 button.onclick = function () {
     
     var request = new XMLHttpRequest();
@@ -20,4 +20,4 @@ button.onclick = function () {
     request.open('GET','http://josephAJ93.imad.hasura-app.io/counter',true);
     request.send(null);
    
-};
+};*/
